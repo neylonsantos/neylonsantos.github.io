@@ -64,8 +64,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.2.1)
-  jekyll-feed (~> 0.12)
-  tzinfo (~> 1.2)
+  jekyll-feed (~> 0.16)
+  tzinfo
   tzinfo-data
   wdm (~> 0.1.1)
 
