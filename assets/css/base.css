@@ -1,0 +1,26 @@
+html {
+  background-color: #323232;
+}
+
+/* scrollbar modification */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  /* border-radius: 30px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: aliceblue;
+}
+
+p {
+  color: aliceblue;
+}

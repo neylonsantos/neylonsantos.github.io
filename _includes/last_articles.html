@@ -1,0 +1,22 @@
+<div class="last-articles mt-6">
+  <div class="articles">
+    <h2 class="mb-4">Artigos</h2>
+
+    {% for post in site.posts limit:5%}
+
+    <div class="card">
+      <div class="card-content">
+        <a href="{{ post.url }}"><p class="title">{{ post.title }}</p></a>
+        <p class="subtitle mt-1">{{ post.subtitle }}</p>
+        <div class="info">
+          <p>8 min de leitura</p>
+          <p><i class='bx bx-time-five'></i> {{ post.date | date: "%d/%m/%-Y" }}</p>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+
+    <a href="#" class="all-articles-page"><p><i class='bx bx-folder-open' ></i></i> Todos os artigos</p></a>
+  </div>
+</div>
