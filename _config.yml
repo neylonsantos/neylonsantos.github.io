@@ -31,9 +31,14 @@ instagram_username: neylonssantos
 github_username:  neylonsantos
 
 # Build settings
-# theme: minima
+
+paginate: 5
+paginate_path: "/articles/page:num/"
+
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="all-articles mt-6 mb-5">
+  {% for post in paginator.posts %}
+    {% include card_articles.html %}
+  {% endfor %}
+</div>
+
+{% include pagination.html %}

@@ -20,7 +20,7 @@
   }
 }
 
-.navbar-item {
+a.navbar-item {
   color: #fff;
 }
 
@@ -28,4 +28,5 @@ a.navbar-item:hover {
   color: #868686;
   background-color: none;
   background: none;
+  text-decoration: none;
 }
