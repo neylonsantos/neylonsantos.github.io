@@ -3,7 +3,7 @@ Meu cartão de visitas virtual e micro blog, seja bem vindo (a)!
 
 ## Feito com **Jekyll**, **Bulma** e 💜
 ### Instalação local
-- 1° Passo: Intale o ruby em seu ambiente de desenvolvimento
+- 1° Passo: Instale o ruby em seu ambiente de desenvolvimento
 
   Consulte https://www.ruby-lang.org/pt/downloads/ para mais informações.
 
