@@ -20,8 +20,8 @@ Meu cartão de visitas virtual e micro blog, seja bem vindo (a)!
   $ gem install bundler jekyll
   ```
   Apos isso o Jekyll estará instalado.
-  
-- 4 Passo: Instalação das dependências 
+
+- 4 Passo: Instalação das dependências
 
   Na pasta do projeto execute o seguinte comando:
   ```shell
@@ -39,7 +39,7 @@ Meu cartão de visitas virtual e micro blog, seja bem vindo (a)!
             Source: ~/neylonsantos.github.io
        Destination: ~/neylonsantos.github.io/_site
   Incremental build: disabled. Enable with --incremental
-      Generating... 
+      Generating...
        Jekyll Feed: Generating feed for posts
                     done in 0.028 seconds.
   Auto-regeneration: enabled for '~/neylonsantos.github.io'
@@ -47,6 +47,6 @@ Meu cartão de visitas virtual e micro blog, seja bem vindo (a)!
   Server running... press ctrl-c to stop.
   ```
   Deu tudo certo! Caso contrario recomendo ler a [documentação do Jekyll](https://jekyllrb.com/docs/) para resolver o problema.
-  
-Contato: neylonsantos@triunfo.net.br
-         - [@neylonssantos](http://twitter.com/neylonssantos) (Twitter)
+
+Contato: neylon@triunfo.net.br
+         - [@oneylons](http://twitter.com/oneylons) (Twitter)
