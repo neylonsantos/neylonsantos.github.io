@@ -1,9 +1,6 @@
 # [neylonsantos.github.io](https://neylonsantos.github.io/)
 Meu cartão de visitas virtual e micro blog, seja bem vindo (a)!
 
-![oneylons](https://user-images.githubusercontent.com/54071474/212987850-9343b89e-56dc-4de8-becd-b04f84c055b5.png)
-
-
 ## Feito com **Jekyll**, **Bulma** e 💜
 
 - 1° Passo: Instale o ruby em seu ambiente de desenvolvimento
@@ -51,5 +48,5 @@ Meu cartão de visitas virtual e micro blog, seja bem vindo (a)!
   ```
   Deu tudo certo! Caso contrario recomendo ler a [documentação do Jekyll](https://jekyllrb.com/docs/) para resolver o problema.
 
-Contato: neylon@triunfo.net.br
-         - [@oneylons](http://twitter.com/oneylons) (Twitter)
+Contato: contato@neylon.xyz
+         - [@neylonxyz](http://twitter.com/neylonxyz) (Twitter)
