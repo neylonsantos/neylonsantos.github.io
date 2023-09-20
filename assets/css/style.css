@@ -16,3 +16,7 @@ body {
   height: 100vh;
   font-family: 'Inclusive Sans', sans-serif;
 }
+
+a {
+  text-decoration: none;
+}

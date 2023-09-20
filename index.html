@@ -1,6 +1,7 @@
 ---
 layout: home
 ---
+
 <div class="container">
   <main class="about-me">
     <img src="/assets/img/profile.png" alt="Foto de perfil do autor Neylon Santos">
@@ -23,12 +24,17 @@ layout: home
 
   <section class="projects">
     <h2>Projetos</h2>
-
-    {% include card_project.html %}
-
+    <div class="projects-publications">
+      {% for project in site.projects %}
+        {% include card_project.html %}
+      {% endfor %}
+    </div>
   </section>
 
   <section class="articles">
     <h2>Publicações</h2>
+    <div class="articles-publications">
+
+    </div>
   </section>
 </div>
