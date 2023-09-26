@@ -18,5 +18,29 @@ body {
 }
 
 a {
+  color: var(--cor-link);
   text-decoration: none;
+
+  &:hover {
+    color: var(--cor-link-hover);
+  }
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.block {
+  border-radius: 15px 15px 15px 15px;
+  background-color: #121212;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: var(--cor-texto-secundario);
+  text-align: center;
 }

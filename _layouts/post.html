@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  {% include head.html %}
+
+  <head>
+    <link rel="stylesheet" href="/assets/css/post.css">
+    <link rel="stylesheet" href="/assets/css/site_header.css">
+  </head>
+
+  <body>
+    <div class="container">
+      {% include site_header.html %}
+      {% include post_header.html %}
+
+      <div class="post-content block">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+
+
+</html>

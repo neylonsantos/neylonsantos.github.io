@@ -1,24 +1,21 @@
-.container {
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
 .about-me {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 15px 15px 15px 15px;
-  background-color: #121212;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
-.about-me img {
+.about-me .img {
+  background-image: url(/assets/img/profile.png);
+  background-size: 100%;
   border-radius: 100%;
   width: 64px;
   height: 64px;
   margin: 10px;
+  transition: 0.3s;
+
+  &:hover {
+    background-image: url(/assets/img/caricatura_neylon_square.png);
+  }
 }
 
 .about-me h2 {
@@ -42,16 +39,6 @@
 
 .social-icons i:hover {
   color: var(--cor-texto);
-}
-
-.projects {
-  border-radius: 15px 15px 15px 15px;
-  background-color: #121212;
-  margin-top: 20px;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
 }
 
 .projects-publications {
@@ -78,19 +65,7 @@
   }
 }
 
-.articles {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 15px 15px 15px 15px;
-  background-color: #121212;
-  margin-top: 20px;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.card {
+.card-project {
   display: flex;
   background: #fff;
   background-size: 100% 100%;
@@ -102,26 +77,27 @@
   margin: 10px;
 }
 
-.card img {
+.card-project img {
   width: 250px;
   height: 250px;
   border-radius: 15px 15px 15px 15px;
   position: absolute;
 }
 
-.card:hover .overlay {
+.card-project:hover .overlay {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 13px 13px 13px 13px;
   background-color: black;
   opacity: 0.9;
   transition: 0.3s;
 }
 
-.card .description {
+.card-project .description {
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -130,20 +106,66 @@
   font-size: 18px;
 }
 
-.card:hover .description {
+.card-project:hover .description {
   display: flex;
 }
 
-.card .description .button {
+.card-project .description .button {
   display: flex;
   justify-content: center;
   font-size: 50px;
 }
 
-.card .description .button i {
+.card-project .description .button i {
   color: #b0b0b0;
 
   &:hover {
     color: #fff;
   }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.articles-publications {
+  width: 100%;
+}
+
+.card-post {
+  padding: 0 20px 0;
+  border-radius: 15px 15px 15px 15px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #303030;
+  }
+}
+
+.card-post .date {
+  display: flex;
+  align-items: center;
+}
+
+.post-link {
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.card-post h2 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+  padding: 5px 0;
+}
+
+.card-post .date p {
+  padding-left: 5px;
 }

@@ -3,8 +3,8 @@ layout: home
 ---
 
 <div class="container">
-  <main class="about-me">
-    <img src="/assets/img/profile.png" alt="Foto de perfil do autor Neylon Santos">
+  <main class="about-me block">
+    <div class="img"></div>
     <div>
       <h2>Neylon Santos</h2>
       <p>
@@ -22,7 +22,7 @@ layout: home
     </div>
   </main>
 
-  <section class="projects">
+  <section class="projects block">
     <h2>Projetos</h2>
     <div class="projects-publications">
       {% for project in site.projects %}
@@ -31,10 +31,16 @@ layout: home
     </div>
   </section>
 
-  <section class="articles">
+  <section class="articles block">
     <h2>Publicações</h2>
     <div class="articles-publications">
-
+      {% if site.posts.size == 0 %}
+          <p>Não postei nada ainda &#128517;</p>
+      {% else %}
+        {% for post in site.posts %}
+          {% include card_post.html %}
+        {% endfor %}
+      {% endif %}
     </div>
   </section>
 </div>
