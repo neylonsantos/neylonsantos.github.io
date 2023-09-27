@@ -1,0 +1,171 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-me .img {
+  background-image: url(/assets/img/profile.png);
+  background-size: 100%;
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+  transition: 0.3s;
+
+  &:hover {
+    background-image: url(/assets/img/caricatura_neylon_square.png);
+  }
+}
+
+.about-me h2 {
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  font-size: 3rem;
+}
+
+.about-me p {
+  font-size: 1rem;
+  max-width: 800px;
+  color: var(--cor-texto-secundario);
+}
+
+.social-icons i {
+  color: var(--cor-texto-secundario);
+  font-size: 24px;
+  margin-top: 10px;
+  padding-right: 7px;
+}
+
+.social-icons i:hover {
+  color: var(--cor-texto);
+}
+
+.projects-publications {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+@media (max-width: 1230px) {
+  .projects-publications {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 425px) {
+  .projects-publications {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card-project {
+  display: flex;
+  background: #fff;
+  background-size: 100% 100%;
+  width: 250px;
+  height: 250px;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  margin: 10px;
+}
+
+.card-project img {
+  width: 250px;
+  height: 250px;
+  border-radius: 13px 13px 13px 13px;
+  position: absolute;
+}
+
+.card-project:hover .overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 13px 13px 13px 13px;
+  background-color: black;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.card-project .description {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.card-project:hover .description {
+  display: flex;
+}
+
+.card-project .description .button {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.card-project .description .button i {
+  color: #b0b0b0;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.articles-publications {
+  width: 100%;
+}
+
+.card-post {
+  padding: 0 20px 0;
+  border-radius: 15px 15px 15px 15px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #303030;
+  }
+}
+
+.card-post .date {
+  display: flex;
+  align-items: center;
+}
+
+.post-link {
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.card-post h2 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+  padding: 5px 0;
+}
+
+.card-post .date p {
+  padding-left: 5px;
+}

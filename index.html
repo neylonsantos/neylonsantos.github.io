@@ -2,43 +2,45 @@
 layout: home
 ---
 
-<div class="apresentation mt-5">
-  <div class="apresentation-hero">
-    <div class="profile-photo mb-6"></div>
-    <div class="bio">
-      <p>Olá prazer! 🖖 Sou cristão e em tempo integral engenheiro de software, mas também hobbista em audiofilia, ilustrador apaixonado por desenho vetorial e criador de conteúdo nas horas vagas. Bem vindo (a) ao meu blog pessoal.</p>
+<div class="container">
+  <main class="about-me block">
+    <div class="img"></div>
+    <div>
+      <h2>Neylon Santos</h2>
+      <p>
+        Engenheiro de software, rubista, espirante a
+        audiófilo e entusiasta da ilustração vetorial
+      </p>
     </div>
-    <hr class="divider">
-
-    <div class="social">
-      <div class="social-icons">
-        <a href="https://www.instagram.com/oneylons/"><i class='bx bxl-instagram'></i></a>
-        <a href="https://twitter.com/oneylons"><i class='bx bxl-twitter' ></i></a>
-        <a href="https://www.linkedin.com/in/neylonsantos/"><i class='bx bxl-linkedin' ></i></a>
-        <a href="https://github.com/neylonsantos"><i class='bx bxl-github' ></i></a>
-        <a href="https://www.tiktok.com/@oneylons"><i class='bx bxl-tiktok'></i></a>
-        <a href="https://www.youtube.com/@oneylons"><i class='bx bxl-youtube'></i></a>
-      </div>
+    <div class="social-icons">
+      <a href="{{ site.data.social.instagram }}"><i class='bx bxl-instagram-alt'></i></a>
+      <a href="{{ site.data.social.twitter }}"><i class='bx bxl-twitter' ></i></a>
+      <a href="{{ site.data.social.youtube }}"><i class='bx bxl-youtube' ></i></a>
+      <a href="{{ site.data.social.github }}"><i class='bx bxl-github' ></i></a>
+      <a href="{{ site.data.social.linkedin }}"><i class='bx bxl-linkedin-square' ></i></a>
+      <a href="{{ site.data.social.email }}"><i class='bx bxs-envelope' ></i></a>
     </div>
+  </main>
 
-    <div class="network mt-3">
-      <div class="network-icons">
-        <a href="mailto:neylon@triunfo.net.br"><i class='bx bxl-gmail'></i></a>
-        <a href="http://bugando.com.br"><img class="bugando-icon" src="/assets/img/b-bugando-icon.png" alt=""></a>
-        <a href="#"><img class="contramare-icon" src="/assets/img/contramare-icon.png" alt=""></a>
-        <a href="#"><i class='bx bxl-discord-alt' ></i></a>
-      </div>
+  <section class="projects block">
+    <h2>Projetos</h2>
+    <div class="projects-publications">
+      {% for project in site.projects %}
+        {% include card_project.html %}
+      {% endfor %}
     </div>
+  </section>
 
-  </div>
-</div>
-
-<div class="last-articles mt-6">
-  <h2 class="mb-4">Artigos</h2>
-
-  {% for post in site.posts limit: 3 %}
-    {% include card_articles.html %}
-  {% endfor %}
-
-  <a href="{{ 'articles' | relative_url }}" class="all-articles-page mt-3 mb-6"><p><i class='bx bx-folder-open' ></i></i> Todos os artigos</p></a>
+  <section class="articles block">
+    <h2>Publicações</h2>
+    <div class="articles-publications">
+      {% if site.posts.size == 0 %}
+          <p>Não postei nada ainda &#128517;</p>
+      {% else %}
+        {% for post in site.posts %}
+          {% include card_post.html %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </section>
 </div>

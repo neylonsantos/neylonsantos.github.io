@@ -1,0 +1,23 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .img {
+  background-image: url(/assets/img/caricatura_neylon_square.png);
+  background-size: 100%;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  margin: 10px;
+  transition: 0.3s;
+
+  &:hover {
+    background-image: url(/assets/img/profile.png)
+  }
+}
+
+.site-header i {
+  font-size: 2rem;
+}

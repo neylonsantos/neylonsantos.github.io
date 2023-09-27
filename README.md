@@ -1,7 +1,7 @@
-# [neylonsantos.github.io](https://neylonsantos.github.io/)
+# [neylon.xyz](https://neylonsantos.github.io/)
 Meu cartão de visitas virtual e micro blog, seja bem vindo (a)!
 
-## Feito com **Jekyll**, **Bulma** e 💜
+## Feito com **Jekyll** e 💜
 
 - 1° Passo: Instale o ruby em seu ambiente de desenvolvimento
 
@@ -48,5 +48,6 @@ Meu cartão de visitas virtual e micro blog, seja bem vindo (a)!
   ```
   Deu tudo certo! Caso contrario recomendo ler a [documentação do Jekyll](https://jekyllrb.com/docs/) para resolver o problema.
 
-Contato: contato@neylon.xyz
-         - [@neylonxyz](http://twitter.com/neylonxyz) (Twitter)
+### Contatos:
+* contato@neylon.xyz
+* [@neylonxyz](http://twitter.com/neylonxyz) (Twitter)
