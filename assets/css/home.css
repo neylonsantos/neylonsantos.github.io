@@ -72,7 +72,6 @@
   width: 250px;
   height: 250px;
   border-radius: 15px 15px 15px 15px;
-  padding: 10px;
   position: relative;
   margin: 10px;
 }
@@ -80,7 +79,7 @@
 .card-project img {
   width: 250px;
   height: 250px;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 13px 13px 13px 13px;
   position: absolute;
 }
 
@@ -104,6 +103,7 @@
   position: relative;
   z-index: 1;
   font-size: 18px;
+  padding: 10px;
 }
 
 .card-project:hover .description {
