@@ -1,8 +1,12 @@
 <div class="post-header block">
   <h2>{{ page.title }}</h2>
 
+  <div class="image">
+    <img src="{{ page.image }}">
+  </div>
+
   <div class="date">
-    <i class='bx bxs-time-five' style='color:#ffffff'></i>
+    <i class='bx bxs-calendar' style='color:#ffffff'></i>
     <p>{{ page.date | date: "%d/%m/%Y" }}</p>
   </div>
 </div>

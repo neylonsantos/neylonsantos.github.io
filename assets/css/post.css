@@ -4,7 +4,12 @@
 }
 
 .post-header h2 {
-  margin-block-end: 5px;
+  margin-block-end: 16px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .date p {
@@ -12,9 +17,11 @@
 }
 
 .post-content {
-  font-size: 1.10rem;
+  font-size: 1rem!important;
+  line-height: 1.8!important;
 }
 
+p { color: #ededed; }
 .highlight pre { background-color: #272822; }
 .highlight .hll { background-color: #272822; }
 .highlight .c { color: #75715e } /* Comment */
