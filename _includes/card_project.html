@@ -1,14 +1,9 @@
 <div class="card-project">
   <img src="{{ project.img | relative_url }}">
-  <div class="overlay"></div>
-  <div class="description">
-    <p>
-      {{ project.description }}
-    </p>
-    <div class="button">
-      <a href="{{ project.link }}">
-        <i class='bx bx-link-external'></i>
-      </a>
+  <a href="{{ project.link }}">
+    <div class="overlay"></div>
+    <div class="description">
+      <p>{{ project.description }}</p>
     </div>
-  </div>
+  </a>
 </div>
