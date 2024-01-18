@@ -1,0 +1,30 @@
+---
+layout: links
+permalink: /links/
+---
+
+<div class="container">
+  <main class="about-me">
+    <div class="img"></div>
+    <h2>Neylon Santos</h2>
+    <p>Engenheiro de software, rubista, aspirante a audiófilo e entusiasta da ilustração vetorial</p>
+    {% include social_icons.html %}
+  </main>
+
+  <section class="articles">
+    <div class="articles-publications">
+      <h2>Últimas publicações</h2>
+      {% for post in site.posts limit:3 %}
+        {% include card_post.html %}
+      {% endfor %}
+    </div>
+    <a href="{{ site.url }}"><button>Veja mais</button></a>
+  </section>
+
+  {% include useful_link.html %}
+
+  <footer>
+    <p>Fazei e fazei bem.</p>
+    <p>contato@neylon.xyz</p>
+  </footer>
+</div>
