@@ -1,0 +1,75 @@
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+}
+
+.articles-publications {
+  width: 100%;
+}
+
+.articles-publications .card-post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  /* padding: 0 8px 0; */
+  border-radius: 16px;
+  transition: 0.3s;
+  border: 0.5px solid #181818;
+  margin-bottom: 5px;
+
+  &:hover {
+    background-color: #303030;
+  }
+}
+
+.articles-publications .card-post .date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.articles-publications .card-post img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.articles-publications .card-post .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.articles-publications .card-post h2 {
+  margin-left: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  /* padding: 5px 0; */
+}
+
+.post-link {
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.articles-publications .card-post .date p {
+  font-size: 0.9rem;
+  padding-left: 5px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: var(--cor-texto-secundario);
+}
+
+.articles-publications .card-post .date i {
+  font-size: 0.9rem;
+  color: var(--cor-texto-secundario);
+}
