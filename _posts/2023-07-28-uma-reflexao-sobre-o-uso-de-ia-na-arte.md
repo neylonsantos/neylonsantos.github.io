@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Uma reflexão sobre o uso de IA na arte"
-image: '/assets/img/posts/2023-07-28-uma-reflexao-sobre-o-uso-de-ia-na-arte.jpeg'
+image: '/assets/img/posts/2023-07-28-uma-reflexao-sobre-o-uso-de-ia-na-arte/capa.jpeg'
 ---
 
 Me peguei pensando certo dia enquanto apreciava uma arte gráfica extremamente detalhada, “Poxa, que obra incrível, será que foi feita por uma inteligência artificial (IA)?”, o pensamento foi automático assim como minha intriga comigo mesmo com esse pensamento, pois com ele veio um sentimento penoso.

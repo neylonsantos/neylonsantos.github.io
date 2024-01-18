@@ -4,6 +4,7 @@
 }
 
 .post-header h2 {
+  font-size: 2rem;
   margin-block-end: 16px;
 }
 
@@ -13,7 +14,17 @@
 }
 
 .date p {
+  font-size: 0.9rem;
   padding-left: 5px;
+  color: var(--cor-texto-secundario);
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.date i {
+  color: var(--cor-texto-secundario);
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 .post-content {
@@ -21,7 +32,7 @@
   line-height: 1.8!important;
 }
 
-p { color: #ededed; }
+p { color: var(--cor-texto); }
 .highlight pre { background-color: #272822; }
 .highlight .hll { background-color: #272822; }
 .highlight .c { color: #75715e } /* Comment */
