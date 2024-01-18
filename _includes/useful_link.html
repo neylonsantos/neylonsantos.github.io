@@ -1,0 +1,14 @@
+<section class="useful-links">
+  <div class="useful-links-publications">
+    {% for useful-link in site.useful-links %}
+      <a class="useful-link-url" href="{{ useful-link.link }}">
+        <div class="card-useful-link">
+          <img src="{{ useful-link.img }}" alt="">
+          <div class="title">
+            <h2>{{ useful-link.title }}</h2>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>

@@ -18,6 +18,8 @@ kramdown:
 collections:
   projects:
     output: true
+  useful-links:
+    output: true
 
 plugins:
   - jekyll-feed
